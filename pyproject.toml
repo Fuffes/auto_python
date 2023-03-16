@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "py-auto"
+version = "0.1.0"
+description = ""
+authors = ["fuffes <shamrey02@mail.ru>"]
+readme = "README.md"
+packages = [{include = "py_auto"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.28.2"
+jsonschema = "^4.17.3"
+pytest = "^7.2.2"
+pydantic = "^1.10.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
