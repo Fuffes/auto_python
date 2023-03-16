@@ -13,7 +13,6 @@ def test_get_posts():
     r = requests.get(url=SERVICE_URL)
     response = Response(r)
 
-
     # validadion via pydantic
     response.assert_status_code(200).validate(Post)
 
